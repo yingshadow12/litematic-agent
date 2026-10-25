@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "litematic-agent"
+version = "0.1.0"
+description = "Context-efficient Litematica inspection and editing for AI agents"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+litematic-agent = "litematic_agent.cli:main"
+litematic-mcp = "litematic_agent.mcp:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
